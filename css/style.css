@@ -21,9 +21,9 @@ nav{
 }
 
 nav #toplogo {
-    width: 100px;
+    width: 200px;
     height: 100px;
-    margin: 15px 0 0 10px;
+    margin: 20% 0 0 20%;
     background-image: url(./../img/icon.png);
     background-repeat: no-repeat;
 }
@@ -41,9 +41,10 @@ nav #menu{
 nav #menu .item {
     width: 30%;
     display: block;
-    padding-left: 10%;
-    padding-top: 10px;
+    padding-left: 20%;
+    padding-top: 35px;
     margin: 0;
+    font-size: 30px; 
 }
 
 section {
