@@ -32,7 +32,7 @@ nav {
     margin: 0 0 0 20px;
     font-family: 'Times New Roman', 'Meiryo UI', 'Hiragino Maru Gothic', serif;
     font-size: 16px;
-    color: rgb(63, 180, 92);
+    color: rgb(42, 134, 65);
 }
 
 nav #menu{
@@ -93,7 +93,7 @@ section h2{
     color: #fff;
     margin: 20px 5px 10px 5px;
     padding: 5px 20px;
-    background-color: rgb(77, 209, 128);
+    background-color: rgb(93, 179, 126);
   -webkit-border-radius: 10px;
      -moz-border-radius: 10px;
           border-radius: 10px;
@@ -118,7 +118,7 @@ footer {
     padding: 10px 0;
     /* background: #89c7de; */
     /* color: aquamarine; */
-    background: rgb(93, 218, 124);
+    background: rgb(79, 146, 94);
     color: #fff;
     text-align: center;
 }
