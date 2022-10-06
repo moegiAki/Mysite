@@ -62,7 +62,7 @@ nav #menu .item {
 .sub_link::after { content: "リンク集"; }
 
 section {
-    width: 70%;
+    width: 65%;
     padding-left: 20%;
 }
 
@@ -122,3 +122,29 @@ footer {
     color: #fff;
     text-align: center;
 }
+
+@media screen and (min-width: 960px) {
+	/* 960px以上に適用されるCSS（PC用） */
+    section {
+        max-width: 800px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+	/* 480px以下に適用されるCSS（スマホ用） */
+    section #topImg {
+        width: 100%;
+    }
+
+    .container {
+        display: none;
+    }
+
+    section #topImg {
+        background-image: url(./../img/icon.png);
+    }
+    
+
+
+}
+
