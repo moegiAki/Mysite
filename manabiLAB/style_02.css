@@ -36,7 +36,7 @@ section{
   padding-bottom: 10%;
 }
 
-.name, .like, .weak, .skill, .best, .OneWord {
+.name, .like, .weak, .skill, .best, .oneWord {
   background-color: #fefff9;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -51,12 +51,12 @@ section{
 }
 
 
-.name, .sub div, .OneWord {
+.name, .sub div, .oneWord {
   margin: 1rem;
   padding: 1rem;
 }
 
-.OneWord {
+.oneWord {
   padding-bottom: 2rem;
 }
 

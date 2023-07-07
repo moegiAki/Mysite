@@ -1,5 +1,26 @@
 @charset "UTF-8";
 
+body{
+  background-image:  linear-gradient(#daf3e1 2px, transparent 2px), linear-gradient(to right, #daf3e1 2px, #ffffff 2px);
+  background-size: 40px 40px;
+}
+
+h1, h2, h3, p { 
+  color: rgb(39, 39, 39);  
+  font-family: "M PLUS 1p";
+}
+
+h1{
+  font-size: 2.8rem;
+  margin: 0;
+}
+h2{
+  font-size: 2.0rem;
+  margin-top: 0;
+}
+h3{font-size: 1.6rem;}
+p{font-size: 1.4rem;}
+
 .layout {
   width: 100%;
   height: 100%;
@@ -11,7 +32,7 @@
     "footer footer footer" auto
     / 1fr 4fr 1fr;
   gap: 8px;
-  background-color: #daf3e1;
+  /* background-color: #daf3e1; */
 }
 
 section{
@@ -21,7 +42,7 @@ section{
 .header {
   grid-area: header;
   margin-top: 5%;
-  margin-bottom: 2%;
+  margin-bottom: 5%;
 }
 
 .leftSide {
@@ -30,12 +51,12 @@ section{
 
 /* body  */
 
-
 .body {
   grid-area: body;
   padding: 5%;
   padding-top: 0;
-  padding-bottom: 10%;
+  padding-bottom: 0;
+  
 }
 
 .sub {
@@ -45,45 +66,45 @@ section{
 }
 
 
-.name, .sub div, .OneWord {
+.name, .sub div, .oneWord {
   margin: 1rem;
   padding: 1rem;
 }
 
 .name {
-  background: #f66;
+  background: #acffa4;
   border-radius: 50% 50% 50% 60%/50% 50% 70% 60%;
   margin: 2rem 10rem;
   padding: 3rem 5rem;
 }
 
 .like {
-  background: #fc2;
-  border-radius: 80% 30% 50% 50%/50%;
+  background: rgb(255, 246, 124);
+  border-radius: 45% 35% 50% 50%/50%;
 }
 
 .weak {
-  background: #fc2;
-  border-radius: 40% 40% 50% 20%/30% 50% 50% 50%;
+  background: rgb(255, 246, 124);
+  border-radius: 65% 30% 30% 30%/55%;
 }
 
 .skill {
-  background: #fc2;
-  border-radius: 60% 30% 20% 30%/50%;
+  background: rgb(255, 246, 124);
+  border-radius: 60% 30% 60% 30%/60%;
 }
 
 .best {
-  background: #fc2;
+  background: rgb(255, 246, 124);
   border-radius: 60% 30% 20% 30%/50%;
 }
 
 .oneWord {
-  background: #fc2;
+  background: rgb(255, 246, 124);
   padding-bottom: 2rem;
   margin: 2rem 5rem;
   padding: 3rem 5rem;
-  background: #fc2;
-  border-radius: 60% 30% 20% 30%/50%;
+  background: rgb(255, 246, 124);
+  border-radius: 40% 30% 20% 30%/50%;
 }
 
 .rightSide {
@@ -99,14 +120,22 @@ section{
 }
 
 
+@media screen and (min-width: 1024px) {
+
+  .layout{
+    max-width: 1200px;
+    margin: auto;
+  }
+}
+
 @media screen and (max-width: 1024px) {
+
+
   .name {
     margin: 2rem 4.5rem;
   }
 
-
-
-  .sub div, .OneWord {
+  .sub div, .oneWord {
     margin: 1rem 0.5rem 1rem 0.5rem;
     /* padding: 1rem; */
   }
@@ -122,8 +151,43 @@ section{
       / 1fr 5fr 1fr;
 
   }
-
   .name {
     margin: 2rem 3rem;
+  }
+
+  @media screen and (max-width: 760px) {
+
+    .name, .sub div, .oneWord {
+      margin: 0.5rem;
+      padding:  0.5rem 1rem;
+    }
+    
+    .sub {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 8px;
+    }
+
+    .layout {
+        grid-template-columns:1fr;
+    }
+    .name {
+      border-radius: 50% 50% 50% 60%/50% 50% 70% 60%;
+      margin: 1rem 1rem;
+      padding: 1rem 1rem;
+    }
+    .like {
+      border-radius: 50% 50% 50% 60%/50% 50% 70% 60%;
+    }
+    .weak {
+      border-radius: 50% 50% 50% 60%/50% 50% 70% 60%;
+    }
+    .skill {
+      border-radius: 50% 50% 50% 60%/50% 50% 70% 60%;
+    }
+    .best {
+      border-radius: 50% 50% 50% 60%/50% 50% 70% 60%;
+    }
+
   }
 }
